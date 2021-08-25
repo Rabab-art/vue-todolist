@@ -11,8 +11,12 @@ const app = new Vue({
             ],
     },
     methods: {
-        deleteTask(index) {
-            alert(index);
+        deleteTaskBIndex(index) {
+            this.tasks.splice(index, 1);
+        },
+        deleteTask(task) {
+            this.tasks = task.filter((item) => item !== task);
+
         },
     },
 })
