@@ -11,7 +11,7 @@ const app = new Vue({
             ],
     },
     methods: {
-        deleteTaskBIndex(index) {
+        deleteTaskIndex(index) {
             this.tasks.splice(index, 1);
         },
         deleteTask(task) {

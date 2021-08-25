@@ -16,7 +16,7 @@
     <div id="app">
         <header class="my-2">
             <figure class="mx-auto w-25">
-                <img src="./img/Logo.png" alt="" class="img-fluid">
+                <img src="./img/Logo.png" alt="" class="img-fluid"> Lista
             </figure>
         </header>
         <main class="container w-50">
@@ -24,7 +24,7 @@
                 <li v-for="(task, index) in tasks" class="list-group-item
 d-flex justify-content-between align-items-center">
                     {{ task }}
-                    <button @click="deleteTask(task)" type="button" class="btn-close" aria-label="Close"></button>
+                    <button @click="deleteTaskIndex(index)" type="button" class="btn-close" aria-label="Close"></button>
                 </li>
 
             </ul>
